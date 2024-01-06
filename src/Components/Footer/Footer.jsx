@@ -2,6 +2,7 @@ import React from 'react';
 import image from '../../assets/Image2.png'
 import { FaGoogle, FaInstagram, FaLongArrowAltRight } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -20,45 +21,47 @@ const Footer = () => {
               <FaLongArrowAltRight className="absolute right-2 top-1/2 transform -translate-y-1/2" />
             </button>
           </div>
-          <ul className="flex lg:hidden text-center justify-center gap-3">
-            <li>
+          <ul className="flex lg:hidden text-center justify-center gap-3 mb-5">
+            <li className="socialIcon">
               <a href="">
                 <FaGoogle />
               </a>
             </li>
-            <li>
+            <li className="socialIcon">
               <a href="">
                 <FaFacebookF />
               </a>
             </li>
-            <li>
+            <li className="socialIcon">
               <a href="">
                 <FaInstagram />
               </a>
             </li>
           </ul>
           <h3 className="text-2xl font-bold text-[#030311] mb-4 text-center lg:text-start">
-            logo
+            <Link to="/" className=" font-[cursive] text-2xl font-semibold">
+              PtI
+            </Link>
           </h3>
           <div className="lg:flex justify-between">
             <div>
-              <p className="text-lg font-semibold ">
+              <p className="text-lg font-semibold text-center">
                 Copyright@trip.all right reserved
               </p>
             </div>
             <div className="hidden lg:flex">
               <ul className="flex gap-3">
-                <li>
+                <li className="socialIcon">
                   <a href="">
                     <FaGoogle />
                   </a>
                 </li>
-                <li>
+                <li className="socialIcon">
                   <a href="">
                     <FaFacebookF />
                   </a>
                 </li>
-                <li>
+                <li className="socialIcon">
                   <a href="">
                     <FaInstagram />
                   </a>

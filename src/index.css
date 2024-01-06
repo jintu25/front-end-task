@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body{
+    background-color: #e2e2e2;
+}
+
+.socialIcon{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    line-height: 50;
+    color: rgb(226, 72, 0);
+    transition: ease-in-out .5s;
+}
+.socialIcon:hover{
+    background-color: rgb(12, 0, 46);
+    color: white;
+}

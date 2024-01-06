@@ -10,10 +10,14 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 
 const FoodItem = ({ item }) => {
-    console.log(item)
     return (
       <SwiperSlide>
-        <img src={item.ImageUrl} alt="" />
+        <img
+          className="h-[280px] rounded-lg w-full"
+          src={item?.ImageUrl}
+          alt="image"
+        />
+        <h3 className='text-lg font-semibold text-[#0f0820] text-center'>{item?.Name}</h3>
       </SwiperSlide>
     );
 };
