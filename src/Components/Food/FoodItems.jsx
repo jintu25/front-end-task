@@ -15,10 +15,13 @@ useEffect(() => {
   const fetchData = async () => {
     try {
       const response = await fetch(
-        "./food.json"
+        "./food.json" //here i use json file because of your api image some problem that's way when i host in this website image doesn't show
+        // main problem is image url
+        // http://www.api.technicaltest.quadtheoryltd.com/Resources/Image\\ChickenFry.jpg
+        // image than \\ this that's way doesn't show image than i use / slas than image show.
+        // http://www.api.technicaltest.quadtheoryltd.com/Resources/Image/Cake.jpg
       );
       const data = await response.json();
-
       const items = data.Items;
       setFoodItems(items);
     } catch (error) {
@@ -55,7 +58,7 @@ useEffect(() => {
 
             breakpoints={{
               "@0.00": {
-                slidesPerView: 1,
+                slidesPerView: 2,
                 spaceBetween: 10,
               },
               "@0.75": {
@@ -121,7 +124,7 @@ useEffect(() => {
             }}
             breakpoints={{
               "@0.00": {
-                slidesPerView: 1,
+                slidesPerView: 2,
                 spaceBetween: 10,
               },
               "@0.75": {

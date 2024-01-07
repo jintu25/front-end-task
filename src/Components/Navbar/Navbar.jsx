@@ -38,10 +38,10 @@ const Navbar = () => {
             />
           </div>
 
-          <ul className="menu menu-horizontal px-1 ">
+          <ul className="menu menu-horizontal px-1 bg-slate-200">
             <li>
-              <details className="bg-white border border-slate-200">
-                <summary className="text-lg font-semibold text-[#140625]">
+              <details className="border bg-white px-3 w-full">
+                <summary className="text-lg font-semibold text-[#140625] bg-white hover:bg-white">
                   Menu
                 </summary>
                 <ul className="p-2">

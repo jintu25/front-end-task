@@ -22,4 +22,12 @@ Currently, two official plugins are available:
 # and this also fully responsive desktop, laptop, tablet, mobile.
 # last i host in firebase and code deploy in gitub and than submit this tasks.
 
+# const response = await fetch(
+   #     "./food.json" //here i use json file because of your api image some problem that's way when i host in this website image doesn't show
+    #    main problem is image url
+         # http://www.api.technicaltest.quadtheoryltd.com/Resources/Image\\ChickenFry.jpg
+        // image than \\ this that's way doesn't show image than i use / slas than image show.
+        // http://www.api.technicaltest.quadtheoryltd.com/Resources/Image/Cake.jpg
+      );
+
 <!-- It may be possible to design a better project in the meantime. but due to some problems, I cannot work on the project at my best. I am working on another team project. and also the election effect on my task -->
