@@ -15,7 +15,7 @@ useEffect(() => {
   const fetchData = async () => {
     try {
       const response = await fetch(
-        "http://www.api.technicaltest.quadtheoryltd.com/api/Item?page=1&pageSize=10"
+        "./food.json"
       );
       const data = await response.json();
 
