@@ -84,7 +84,6 @@ useEffect(() => {
               "--swiper-navigation-color": "#fff",
               "--swiper-pagination-color": "#fff",
             }}
-            lazy={true}
             pagination={{
               clickable: true,
             }}
