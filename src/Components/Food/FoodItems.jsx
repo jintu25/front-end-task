@@ -14,23 +14,19 @@ const FoodItems = () => {
 useEffect(() => {
   const fetchData = async () => {
     try {
-      const response = await fetch(
-        "http://www.api.technicaltest.quadtheoryltd.com/api/Item?page=1&pageSize=10"
-      );
+      const response = await fetch("/food.json"); // Assuming food.json is in the public folder
       const data = await response.json();
 
-      // Extracting the 'Items' array from the response
       const items = data.Items;
-
-      // Updating the state with the items
       setFoodItems(items);
     } catch (error) {
       console.error("Error fetching data:", error);
     }
-    };
-    
-    fetchData();
+  };
+
+  fetchData();
 }, []);
+
 
   const popularItems = foodItems.filter((item) => item.IsPopular);
   const recommendedItems = foodItems.filter((item) => item.IsRecommended);
