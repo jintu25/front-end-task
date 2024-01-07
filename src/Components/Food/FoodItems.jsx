@@ -14,7 +14,9 @@ const FoodItems = () => {
 useEffect(() => {
   const fetchData = async () => {
     try {
-      const response = await fetch("/food.json"); // Assuming food.json is in the public folder
+      const response = await fetch(
+        "http://www.api.technicaltest.quadtheoryltd.com/api/Item?page=1&pageSize=10"
+      );
       const data = await response.json();
 
       const items = data.Items;
@@ -50,9 +52,6 @@ useEffect(() => {
           <Swiper
             slidesPerView={1}
             spaceBetween={20}
-            // pagination={{
-            //   clickable: true,
-            // }}
 
             breakpoints={{
               "@0.00": {
